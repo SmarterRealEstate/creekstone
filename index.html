@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creekstone — Courtice | Register for VIP Platinum Access</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet">
+  <!-- Meta Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','4093978017293385');fbq('track','PageView');
+  </script>
+  <style>
+    :root {
+      --brick:    #57130B;
+      --brick-lt: #6B1A0E;
+      --brick-dk: #3d0d07;
+      --gold:     #EFB51D;
+      --gold-dk:  #d09d10;
+      --blush:    #ECC6CE;
+      --blush-lt: #f9f0f2;
+      --navy:     #052147;
+      --white:    #FFFFFF;
+      --text:     #4A4A4A;
+      --text-lt:  #6B6B6B;
+      --light:    #F9F5F4;
+      --border:   #E8DDD9;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      color: var(--text);
+      background: var(--white);
+    }
+
+    /* ── NAV ── */
+    .nav {
+      background: var(--brick);
+      padding: 0 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 12px rgba(87,19,11,0.3);
+    }
+    .nav-logo {
+      height: 42px;
+      width: auto;
+    }
+    .nav-cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--brick-dk);
+      text-decoration: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.65rem 1.5rem;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .nav-cta:hover { background: var(--gold-dk); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 88vh;
+      display: flex;
+      align-items: center;
+      background: url('https://media.minto.com/img/ppages/340/Neighbourhood-Hero+Image-1920x1080.png') center/cover no-repeat;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(105deg, rgba(87,19,11,0.88) 0%, rgba(87,19,11,0.65) 55%, rgba(87,19,11,0.20) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      padding: 4rem 3rem;
+    }
+    .hero-eyebrow {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.4rem;
+    }
+    .hero-logo {
+      width: 260px;
+      max-width: 100%;
+      margin-bottom: 1.8rem;
+      display: block;
+    }
+    .hero-tagline {
+      font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+      font-weight: 300;
+      color: var(--white);
+      line-height: 1.28;
+      letter-spacing: -0.01em;
+      margin-bottom: 1rem;
+    }
+    .hero-tagline strong { font-weight: 600; color: var(--gold); }
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 0.5rem;
+      font-weight: 300;
+    }
+    .hero-price {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 2.2rem;
+      letter-spacing: 0.02em;
+    }
+    .hero-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--brick-dk);
+      text-decoration: none;
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.9rem 2.2rem;
+      border-radius: 2px;
+      transition: background 0.2s;
+    }
+    .hero-btn:hover { background: var(--gold-dk); }
+
+    /* ── BADGE STRIP ── */
+    .badge-strip {
+      background: var(--gold);
+      color: var(--brick-dk);
+      text-align: center;
+      padding: 0.8rem 1rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5.5rem 2rem;
+      text-align: center;
+    }
+    .section-eyebrow {
+      display: block;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--brick);
+      margin-bottom: 1rem;
+    }
+    .intro h2 {
+      font-size: clamp(1.6rem, 3vw, 2.3rem);
+      font-weight: 300;
+      color: var(--brick);
+      line-height: 1.3;
+      margin-bottom: 1.6rem;
+      letter-spacing: -0.01em;
+    }
+    .intro h2 strong { font-weight: 600; }
+    .intro p {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.75;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* ── FEATURES ── */
+    .features {
+      background: var(--light);
+      padding: 5rem 2rem;
+    }
+    .features-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .features-header {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+    .features-header h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2.1rem);
+      font-weight: 300;
+      color: var(--brick);
+      letter-spacing: -0.01em;
+    }
+    .features-header h2 strong { font-weight: 600; }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1.5rem;
+    }
+    .feature-card {
+      background: var(--white);
+      border-top: 3px solid var(--brick);
+      padding: 1.8rem 1.6rem;
+    }
+    .feature-icon { font-size: 1.75rem; margin-bottom: 0.8rem; }
+    .feature-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--brick);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.01em;
+    }
+    .feature-card p { font-size: 0.9rem; color: var(--text); line-height: 1.65; }
+
+    /* ── GALLERY ── */
+    .gallery {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 280px 280px;
+    }
+    .gallery-item {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .gallery-item.big {
+      grid-row: span 2;
+    }
+
+    /* ── FORM SECTION ── */
+    .form-section {
+      background: var(--brick);
+      padding: 5.5rem 2rem;
+      position: relative;
+    }
+    .form-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--gold);
+    }
+    .form-inner {
+      max-width: 660px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .form-inner .section-eyebrow { color: var(--gold); }
+    .form-inner h2 {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 300;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.01em;
+    }
+    .form-inner h2 strong { font-weight: 600; }
+    .form-inner > p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 2.5rem;
+      line-height: 1.65;
+    }
+    .form-card {
+      background: var(--white);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+      text-align: left;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+    }
+
+    /* ── DEVELOPER ── */
+    .developer {
+      padding: 5rem 2rem;
+      background: var(--blush-lt);
+      text-align: center;
+      border-top: 1px solid var(--blush);
+    }
+    .developer-inner { max-width: 700px; margin: 0 auto; }
+    .developer-eyebrow {
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--text-lt);
+      margin-bottom: 1.2rem;
+      display: block;
+    }
+    .developer-name {
+      font-size: 1.8rem;
+      font-weight: 300;
+      color: var(--brick);
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+    .developer-name strong { font-weight: 700; }
+    .developer p {
+      font-size: 0.92rem;
+      color: var(--text);
+      line-height: 1.75;
+      max-width: 580px;
+      margin: 0 auto;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--brick-dk);
+      color: rgba(255,255,255,0.55);
+      text-align: center;
+      padding: 2.5rem 2rem;
+      font-size: 0.7rem;
+      line-height: 1.75;
+    }
+    footer a { color: rgba(255,255,255,0.7); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero-content { padding: 3rem 1.5rem; }
+      .gallery {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 160px 160px;
+      }
+      .gallery-item.big { grid-column: span 2; grid-row: span 1; }
+    }
+    @media (max-width: 480px) {
+      .nav { padding: 0 1.2rem; }
+      .form-card { padding: 1.75rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <img class="nav-logo" src="https://media.minto.com/slideshows/2936_logo/Creekstone-KO.png" alt="Creekstone" onerror="this.style.display='none'">
+  <a href="#register" class="nav-cta">Register Now</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow">Now Registering — Courtice, Ontario</span>
+    <img class="hero-logo" src="https://media.minto.com/slideshows/2936_logo/Creekstone-KO.png" alt="Creekstone" onerror="this.style.display='none'">
+    <h1 class="hero-tagline">Where <strong>Fresh Air</strong><br>Meets Convenience</h1>
+    <p class="hero-sub">New Single Family Homes &amp; Townhomes</p>
+    <p class="hero-price">Starting from the Mid $600s</p>
+    <a href="#register" class="hero-btn">Register for VIP Platinum Access</a>
+  </div>
+</section>
+
+<!-- BADGE STRIP -->
+<div class="badge-strip">Save Thousands With the New Government HST Rebate &nbsp;·&nbsp; Courtice, Ontario</div>
+
+<!-- INTRO -->
+<section class="intro">
+  <span class="section-eyebrow">Courtice, Ontario</span>
+  <h2>Life at Creekstone.<br><strong>Where Community Comes First.</strong></h2>
+  <p>Located in Courtice, Creekstone gives you premier access to a world of modern amenities. In minutes, connect to major highways like the 418, 407 and 401 — travel easily to Oshawa GO Station for smooth commutes — and spend your downtime exploring local favourites like Tooley's Mill Park and Darlington Provincial Park on the lakefront. Courtice is a scenic, historic town with the appeal of being walkable, with everything your family needs right outside your door.</p>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="features-inner">
+    <div class="features-header">
+      <h2>Everything You Need, <strong>Right at Your Doorstep</strong></h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">🛣️</div>
+        <h3>Highway Access</h3>
+        <p>Quick connections to Hwys 418, 407 &amp; 401 make your commute effortless — whether heading to Toronto, Oshawa, or anywhere across the GTA.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🚉</div>
+        <h3>GO Transit Ready</h3>
+        <p>Easy access to Oshawa GO Station means smooth, stress-free commutes into the city without fighting downtown traffic.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🌿</div>
+        <h3>Nature at Your Doorstep</h3>
+        <p>Explore Tooley's Mill Park, Darlington Provincial Park, and lakefront trails. The great outdoors is your backyard.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏫</div>
+        <h3>Family-Friendly Living</h3>
+        <p>Top-rated schools, parks, sports facilities, and community amenities make Courtice an ideal place to raise a family.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛍️</div>
+        <h3>Modern Conveniences</h3>
+        <p>Shops, restaurants, and services all close by. Everything your family needs — without the big-city hustle.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏡</div>
+        <h3>Quality Craftsmanship</h3>
+        <p>Singles and townhomes built by Minto Communities — a trusted name in Canadian homebuilding with over 65 years of excellence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<div class="gallery">
+  <div class="gallery-item big" style="background-image:url('https://media.minto.com/img/ppages/340/Neighbourhood-Hero+Image-1920x1080.png')"></div>
+  <div class="gallery-item" style="background-image:url('https://media.minto.com/img/ppages/340/Neighbourhood-Image+1-475x370.png')"></div>
+  <div class="gallery-item" style="background-image:url('https://media.minto.com/img/ppages/340/Neighbourhood-Image+2-475x370.png')"></div>
+  <div class="gallery-item" style="background-image:url('https://media.minto.com/img/ppages/340/Neighbourhood-Image+3-475x370.png')"></div>
+  <div class="gallery-item" style="background-image:url('https://media.minto.com/img/ppages/340/Neighbourhood-Image+4-475x370.png')"></div>
+</div>
+
+<!-- FORM SECTION -->
+<section class="form-section" id="register">
+  <div class="form-inner">
+    <span class="section-eyebrow">VIP Platinum Access</span>
+    <h2>Be <strong>First in Line</strong></h2>
+    <p>Register now for exclusive VIP Platinum pricing, first access to floor plans, and incentives before the public launch.</p>
+    <div class="form-card">
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+      <script>
+        hbspt.forms.create({
+          region: "na1",
+          portalId: "39925421",
+          formId: "137c2da9-b489-4cf0-b903-56876b76b6bc",
+          onFormReady: function($form) {
+            try {
+              var iframe = document.querySelector('.hs-form-iframe');
+              if (iframe && iframe.contentDocument) {
+                var s = iframe.contentDocument.createElement('style');
+                var css = [
+                  'body { font-family: "DM Sans", sans-serif; }',
+                  '.hs-button.primary { background:#57130B !important; border-color:#57130B !important; color:#fff !important; font-weight:700 !important; letter-spacing:0.08em !important; text-transform:uppercase !important; border-radius:2px !important; }',
+                  '.hs-button.primary:hover { background:#3d0d07 !important; border-color:#3d0d07 !important; }',
+                  '.hs-form__virality-link,.hs-form__virality-link * { display:none !important; }'
+                ].join(' ');
+                s.appendChild(iframe.contentDocument.createTextNode(css));
+                iframe.contentDocument.head.appendChild(s);
+              }
+            } catch(e) {}
+          }
+        });
+      </script>
+    </div>
+  </div>
+</section>
+
+<!-- DEVELOPER -->
+<section class="developer">
+  <div class="developer-inner">
+    <span class="developer-eyebrow">Developer</span>
+    <div class="developer-name"><strong>Minto</strong> Communities</div>
+    <p>For over 65 years, Minto Communities has been crafting exceptional homes across Canada with a commitment to quality, sustainability, and thoughtful design. Creekstone continues that tradition — a place where neighbours become friends and every detail is built to last.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>We do not represent the builder directly. We represent you. Renderings are artist's imagination only. All information, prices, specifications, floor plans, and incentives are subject to change at any time without notice. E. &amp; O.E.</p>
+  <p style="margin-top:0.5rem;">Jeffrey Villeneuve &nbsp;|&nbsp; Meta Realty Inc. &nbsp;|&nbsp; info@smarterrealestate.ca &nbsp;|&nbsp; (647) 409-7653</p>
+</footer>
+
+</body>
+</html>
